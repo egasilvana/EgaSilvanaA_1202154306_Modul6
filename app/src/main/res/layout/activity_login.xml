@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.egasilvanaa_1202154306_modul6.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_margin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:textColor="@color/text"
+            android:backgroundTint="@color/button"
+            android:onClick="Login"/>
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/button"
+            android:onClick="Daftar"
+            android:text="Registration"
+            android:textColor="@color/text" />
+    </LinearLayout>
+
+</LinearLayout>
